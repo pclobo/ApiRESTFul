@@ -12,7 +12,7 @@ POST:
 curl -X POST http://localhost:8080/items/889 -d '{"id":"889","title":"Teclado","category_id":"Insumo Informatico",
 "price":50.0,"currency_id":"Pesos","available_quantity":10,"buying_mode":"Comprar ahora","listing_type_id":"Oro",
 "condition":"Nuevo","description":"Teclado a Pilas","video_id":"https://www.youtube.com","warranty":"1 año",
-"pictures":[{"source":"http://lalala.com"}]}'
+"pictures":[{"source":"https://d243u7pon29hni.cloudfront.net/images/products/1148608_l.png"}]}'
 
 GET: 
 curl -X GET http://localhost:8080/items/889
@@ -22,7 +22,7 @@ PUT:
 curl -X PUST http://localhost:8080/items/889 -d '{"id":"889","title":"Mouse","category_id":"Insumo Informatico",
 "price":50.0,"currency_id":"Pesos","available_quantity":10,"buying_mode":"Comprar ahora","listing_type_id":"Oro",
 "condition":"Nuevo","description":"Teclado a Pilas","video_id":"https://www.youtube.com","warranty":"1 año",
-"pictures":[{"source":"http://lalala.com"}]}'
+"pictures":[{"source":"https://cdn.tecnogaming.com/wp-content/uploads/2017/05/Rzr_Lancehead_V4.jpg"}]}'
 
 DELETE:
 curl -X DELETE http://localhost:8080/items/889

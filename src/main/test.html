@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p class="pB">Click me away!</p>
+<p id="pA" class="pB">Click me too!</p>
+juan perez
+
+<p>Nombre obtenido: <input type="text" id="txt-nombres"></p>
+
+<button id="btnObtener">obtener</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+
+
+        $("#pA").click(function(){
+            alert("elemento ID");
+        });
+
+        $(".pB").click(function(){
+            alert("elemento class");
+        });
+
+        $("#btnObtener").click(function(){
+            obtenerData();
+        });
+
+    });
+
+    function obtenerData()
+    {
+        $.get( "obtenerItems", {  } )
+            .done(function( response ) {
+                var _data = response.data;
+                //var _data = JSON.parse(data);
+
+                console.log(response.data.first_name);
+                $("#txt-nombres").val(_data.first_name);
+
+                //alert( response.data.first_name );
+            });
+    }
+
+</script>
+
+</body>
+</html>

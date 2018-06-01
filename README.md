@@ -16,6 +16,7 @@ curl -X POST http://localhost:8080/items/889 -d '{"id":"889","title":"Teclado","
 
 GET: 
 curl -X GET http://localhost:8080/items/889
+
 curl -X GET http://localhost:8080/items
 
 PUT:
